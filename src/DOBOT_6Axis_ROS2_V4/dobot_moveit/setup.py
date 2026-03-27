@@ -25,11 +25,7 @@ setup(
         'console_scripts': [
             'joint_states = dobot_moveit.joint_states:main',
             'action_move_server = dobot_moveit.action_move_server:main',
-            'vision_coordinator = dobot_moveit.vision_coordinator:main',
-            'calibration_node = dobot_moveit.calibration_node:main',
-            'depalletizer = dobot_moveit.depalletizer:main',
             'scene_manager = dobot_moveit.scene_manager:main',
-            'collision_calibrator = dobot_moveit.collision_calibrator:main',
         ],
     },
 )
