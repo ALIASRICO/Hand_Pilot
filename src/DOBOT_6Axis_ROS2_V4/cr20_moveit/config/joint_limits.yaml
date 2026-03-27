@@ -1,0 +1,34 @@
+default_velocity_scaling_factor: 0.1
+default_acceleration_scaling_factor: 0.1
+
+joint_limits:
+  joint1:
+    has_velocity_limits: true
+    max_velocity: 2.618  # 150 deg/s en rad/s
+    has_acceleration_limits: true
+    max_acceleration: 5.236
+  joint2:
+    has_velocity_limits: true
+    max_velocity: 2.618
+    has_acceleration_limits: true
+    max_acceleration: 5.236
+  joint3:
+    has_velocity_limits: true
+    max_velocity: 2.618
+    has_acceleration_limits: true
+    max_acceleration: 5.236
+  joint4:
+    has_velocity_limits: true
+    max_velocity: 3.14  # 180 deg/s
+    has_acceleration_limits: true
+    max_acceleration: 6.28
+  joint5:
+    has_velocity_limits: true
+    max_velocity: 3.14
+    has_acceleration_limits: true
+    max_acceleration: 6.28
+  joint6:
+    has_velocity_limits: true
+    max_velocity: 3.14
+    has_acceleration_limits: true
+    max_acceleration: 6.28

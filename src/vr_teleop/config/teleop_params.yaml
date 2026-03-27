@@ -1,0 +1,38 @@
+vr_teleop_node:
+  ros__parameters:
+    simulation_mode: true
+    dry_run: false
+
+    # Control loop a 20Hz
+    servo_rate_hz: 20.0
+
+    # Suavizado EMA en soluciones IK (0.0=sin cambio, 1.0=sin suavizado)
+    # 0.6 = más responsivo, menos lag
+    ema_alpha: 0.6
+
+    # Escalas de posición (1m mano VR = N mm robot)
+    position_scale_x: 2000.0
+    position_scale_y: 2000.0
+    position_scale_z: 2000.0
+
+    # Mapeo de ejes VR → Robot (calibrado)
+    # Derecha mano (VR X+) → Derecha robot (X+)
+    # Arriba mano (VR Y+) → Arriba robot (Z+)
+    # Adelante mano (VR Z+) → Adelante robot (Y+)
+    vr_axis_to_robot_x: "x"
+    vr_axis_to_robot_y: "z"
+    vr_axis_to_robot_z: "y"
+    flip_x: false
+    flip_y: false
+    flip_z: false
+
+    # Límites del workspace (mm)
+    workspace_x_min: -1500.0
+    workspace_x_max: 1500.0
+    workspace_y_min: -1500.0
+    workspace_y_max: 1500.0
+    workspace_z_min: 50.0
+    workspace_z_max: 2000.0
+
+    # Paso máximo por ciclo (mm) - 40mm a 20Hz = 800mm/s máx
+    max_step_mm: 40.0

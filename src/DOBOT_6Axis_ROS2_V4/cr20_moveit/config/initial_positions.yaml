@@ -1,0 +1,10 @@
+# Home position for CR20 (from depalletizer: arm folded forward/down)
+# [90, 0, -90, 0, 90, 0] degrees
+
+initial_positions:
+  joint1: 1.5708
+  joint2: 0.0
+  joint3: -1.5708
+  joint4: 0.0
+  joint5: 1.5708
+  joint6: 0.0
